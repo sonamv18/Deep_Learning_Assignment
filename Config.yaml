@@ -1,0 +1,14 @@
+train_data: "train.csv"
+test_data: "valid.csv"
+target_name: ["action", "object", "location"]
+test_size: 0.25
+random_state: 44
+
+
+train:
+  batch_size: 100
+  epochs: 50
+  MultiGPU: True
+evaluate:
+  batch_size: 100
+  
